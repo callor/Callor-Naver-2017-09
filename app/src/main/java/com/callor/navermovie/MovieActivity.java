@@ -5,6 +5,7 @@ import android.databinding.DataBindingUtil;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -60,6 +61,17 @@ public class MovieActivity extends AppCompatActivity {
         protected Void doInBackground(Integer... integers) {
             naverSearch();
             return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+            MovieAdapter adapter = new MovieAdapter(movies);
+            movieBinding.movieListView.setAdapter(adapter);
+
+            StaggeredGridLayoutManager layoutManager
+                    = new StaggeredGridLayoutManager(1,StaggeredGridLayoutManager.VERTICAL);
+            movieBinding.movieListView.setLayoutManager(layoutManager);
         }
     }
 
