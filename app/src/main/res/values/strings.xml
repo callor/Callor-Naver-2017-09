@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">네이버 검색</string>
+    <string name="movie_name">네이버 영화 검색</string>
+    <string name="title_home">Home</string>
+    <string name="title_movie">영화검색</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
