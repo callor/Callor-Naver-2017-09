@@ -1,4 +1,4 @@
-package com.callor.navermovie;
+package com.callor.navermovie
 
 /**
  * Created by callor on 2017-09-14.
@@ -9,7 +9,7 @@ package com.callor.navermovie;
  *
  */
 
-public class NaverSecret_sample {
-    public static final String NAVER_CLIENT_ID = "YOUR_NAVER_CLIENT_ID";
-    public static final String NAVER_CLIENT_SECRET = "YOUR_NAVER_CLIENT_SECRET";
+object NaverSecret_sample {
+    val NAVER_CLIENT_ID = "YOUR_NAVER_CLIENT_ID"
+    val NAVER_CLIENT_SECRET = "YOUR_NAVER_CLIENT_SECRET"
 }
