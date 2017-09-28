@@ -12,10 +12,13 @@
 
 
     ext.kotlin_version = '1.1.50'
+
     ext.android_plugin_version = '2.3.3'
+    
     ext.anko_version = '0.10.0-beta-2'
 
 * module에
 
     kapt "com.android.databinding:compiler:$android_plugin_version"
+    
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
